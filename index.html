@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR YOU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+  <h1 id="mh1">For you, Cutie Kaylah</h1>
+
+
+    <p class="letter">
+       Alors bonjour Kaylah, nous savons que nous sommes dans cette situation, nous parlons depuis presque 4 mois, alors oui, nous savons que tu m'aimes bien, je t'aime tellement...
+    </p>
+
+    <p class="wb">
+        Im asking you to be my gf.
+    </p>
+    <div class="button-container">
+        <button id="yes-button">Yes</button>
+        <button id="no-button">No</button>
+      </div>
+
+      <script>
+        const yesButton = document.getElementById('yes-button');
+        const noButton = document.getElementById('no-button');
+        const letterElement = document.querySelector('.letter'); 
+        let yesClicked = false; 
+
+        yesButton.addEventListener('click', () => {
+          if (!yesClicked) { 
+            letterElement.textContent = 'Yay! I\'m so happy you said yes! you\'re mine now you donotgoclosetoqnyboyokay';
+            yesClicked = true;
+
+            document.querySelector('.wb').classList.add('hidden');
+            document.querySelector('.button-container').classList.add('hidden');
+          }
+        });
+
+        noButton.addEventListener('click', () => {
+          const maxX = window.innerWidth - 100; 
+          const maxY = window.innerHeight - 50; 
+          const randomX = Math.floor(Math.random() * maxX);
+          const randomY = Math.floor(Math.random() * maxY);
+
+          noButton.style.position = 'absolute';
+          noButton.style.top = `${randomY}px`;
+          noButton.style.left = `${randomX}px`;
+        });
+      </script>
+</body>
+</html>

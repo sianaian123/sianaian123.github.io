@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(231, 101, 151);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .letter {
+
+    font-family: serif;
+    font-weight: bold;
+    border: 2px inset rgb(255, 0, 140);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  #mh1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 70px;
+    display: block;
+    font-family: cursive;
+    font-size: 30px
+  }
+  
+  .wb {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 140, 190); 
+    color: #fff; 
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(240, 120, 160);
+  }
+  
+  /* AMO ININ AN PARA HA MOBILE */
+  @media only screen and (max-width: 768px) {
+    .letter {
+      font-size: 1.2rem;
+    }
+    .wb {
+      font-size: 1.5rem;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+  }
+
+  
+ /* KUNG MEDJO DAKO IYA SCREEN */
+  @media only screen and (min-width: 1024px) {
+    img {
+      max-width: 15rem;
+    }
+} 
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 80%;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
